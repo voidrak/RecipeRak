@@ -53,3 +53,11 @@ body {
   height: auto;
   max-width: 200px;
 }
+.food-name {
+  text-align: center;
+  background-color: var(--BG);
+  width: 90%;
+  transform: translate(5%);
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
