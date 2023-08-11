@@ -8,6 +8,11 @@ const foodArea = document.querySelector(".food-name h2");
 const foodIngredients = document.querySelector(".food-ingredients ul");
 const viewRecipe = document.querySelector(".view-recipe button");
 const hiddenRecipe = document.querySelector(".hidden-recipe  ");
+const hiddenRecipePre = document.querySelector(".hidden-recipe pre ");
+const hideEl = document.querySelector(".hide-el");
+const foodDetails = document.querySelector(".food-details");
+
+//THE MAIN FUNCTION
 async function getRecipe() {
   // FETCH DATA FROM USER INPUT
   const foodName = searchInput.value;
@@ -38,15 +43,19 @@ async function getRecipe() {
   }
   // UPDATE THE OTHER HTML PARTS
   foodIngredients.innerHTML = ingredientsEL;
-  hiddenRecipe.textContent = Meals.strInstructions;
-  console.log(Meals);
-  console.log(Meals.strInstructions);
+  hiddenRecipePre.textContent = Meals.strInstructions;
+  foodDetails.style.display = "flex";
 }
+
 viewRecipe.addEventListener("click", () => {
   shownRecipe.style.display = "none";
-  hiddenRecipe.style.display = "block";
+  hiddenRecipe.style.display = "flex";
 });
 
 searchBtn.addEventListener("click", () => {
   getRecipe();
+});
+hideEl.addEventListener("click", () => {
+  shownRecipe.style.display = "block";
+  hiddenRecipe.style.display = "none";
 });

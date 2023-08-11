@@ -17,8 +17,16 @@ body {
   /* height: 100vh; */
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+#personal {
+  margin-top: 4rem;
+}
+#personal a:any-link {
+  text-decoration: none;
+  color: aquamarine;
 }
 .container {
   background-color: var(--white);
@@ -26,12 +34,13 @@ body {
   max-width: 32em;
   border-radius: 5px;
   margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 .viewed-recipe {
-  display: no;
+  display: block;
 }
 .food-details {
-  display: flex;
+  display: none;
   flex-flow: column nowrap;
 }
 .search {
@@ -97,8 +106,18 @@ body {
 .hidden-recipe {
   height: 80vh;
   display: none;
+  flex-flow: column nowrap;
 }
 .hidden-recipe pre {
   white-space: pre-wrap;
   margin: 5px;
+}
+.hide-el {
+  align-self: end;
+  margin: 1rem;
+}
+.hidden-recipe button {
+  background-color: var(--BG);
+  padding: 0.2em;
+  border-radius: 3px;
 }
