@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
@@ -11,7 +14,8 @@
 body {
   background-color: var(--BG);
   width: 100%;
-  height: 100svh;
+  /* height: 100vh; */
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,13 +25,21 @@ body {
   width: 90vw;
   max-width: 32em;
   border-radius: 5px;
+  margin-top: 5rem;
+}
+.viewed-recipe {
+  display: no;
+}
+.food-details {
+  display: flex;
+  flex-flow: column nowrap;
 }
 .search {
-  padding-top: 20px;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 2rem;
+  margin: 2rem;
 }
 .search input {
   border: 0;
@@ -60,4 +72,33 @@ body {
   transform: translate(5%);
   margin-bottom: 1rem;
   border-radius: 5px;
+}
+.food-ingredients ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 2em;
+  column-gap: 60px;
+}
+.food-ingredients ul li {
+  padding: 0.5rem 0;
+}
+.view-recipe {
+  display: flex;
+  align-self: end;
+  margin-right: 2rem;
+  padding-bottom: 2rem;
+}
+.view-recipe button {
+  background-color: var(--BG);
+  padding: 0.2rem;
+  border-radius: 5px;
+  font-weight: 900;
+}
+.hidden-recipe {
+  height: 80vh;
+  display: none;
+}
+.hidden-recipe pre {
+  white-space: pre-wrap;
+  margin: 5px;
 }
