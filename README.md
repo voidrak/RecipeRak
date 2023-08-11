@@ -9,6 +9,7 @@ RecipeRak is a web-based Recipe application. the app is developed using Javascri
 # Features
 RecipeRak solves the challenge of finding the recipe for the meals in one place. It provides detailed information with step-by-step instructions and an additional video on how to do it
 # Screenshots
+
  <img src="img\Screenshot 2023-08-11 135326.png"> <img src="img\Screenshot 2023-08-11 135718.png"> <img src="img\Screenshot 2023-08-11 152533.png">
  
 # Tech Used
