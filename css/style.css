@@ -111,6 +111,7 @@ body {
 .hidden-recipe pre {
   white-space: pre-wrap;
   margin: 5px;
+  font-size: 15px;
 }
 .hide-el {
   align-self: end;
@@ -120,4 +121,19 @@ body {
   background-color: var(--BG);
   padding: 0.2em;
   border-radius: 3px;
+}
+.youtube {
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+.youtube a {
+  /* color: var(--BG); */
+  background-color: var(--BG);
+  border: 1px solid #f0ba2f;
+  border-radius: 5px;
+  padding: 1px;
+}
+.youtube a:any-link {
+  text-decoration: none;
+  color: black;
 }

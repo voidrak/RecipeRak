@@ -11,6 +11,7 @@ const hiddenRecipe = document.querySelector(".hidden-recipe  ");
 const hiddenRecipePre = document.querySelector(".hidden-recipe pre ");
 const hideEl = document.querySelector(".hide-el");
 const foodDetails = document.querySelector(".food-details");
+const youtubeVid = document.querySelector(".youtube a");
 
 //THE MAIN FUNCTION
 async function getRecipe() {
@@ -44,7 +45,9 @@ async function getRecipe() {
   // UPDATE THE OTHER HTML PARTS
   foodIngredients.innerHTML = ingredientsEL;
   hiddenRecipePre.textContent = Meals.strInstructions;
+  youtubeVid.href = Meals.strYoutube;
   foodDetails.style.display = "flex";
+  console.log(Meals);
 }
 
 viewRecipe.addEventListener("click", () => {
