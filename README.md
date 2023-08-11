@@ -6,6 +6,8 @@
 # Description
 RecipeRak is a web-based Recipe application. the app is developed using Javascript, CSS, and HTML. provide users with information about the meal they want with detailed explanations and step-by-step instructions 
 
+##Website <a href="https://reciperak.netlify.app">link</a>
+
 # Features
 RecipeRak solves the challenge of finding the recipe for the meals in one place. It provides detailed information with step-by-step instructions and an additional video on how to do it
 # Screenshots
